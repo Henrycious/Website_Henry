@@ -406,13 +406,15 @@ header {
 }
 
 .portfolio {
-    display: grid;
+    display: inline-grid;
+    align-items:center;
+    justify-content: center;
     /*auto fit has to use the minmax */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     overflow: hidden;
     /* grows inside the box */
 }
